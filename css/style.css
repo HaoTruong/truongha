@@ -17,6 +17,11 @@ body {
     --bggradient: linear-gradient(90deg, rgba(67, 67, 68, 1) 0%, rgba(214, 214, 221, 1) 45%, rgba(212, 215, 215, 1) 94%);
 }
 
+/*Hide scrollbar*/
+#noScroll {
+    overflow:hidden;
+}
+
 /* Header */
 header a {
     font-family: var(--Chealsea);
@@ -29,8 +34,9 @@ header {
     background: var(--bggradient);
 }
 
-
 .dropdown-content {
+    right: 0 !important;
+    left: auto !important;
     display: none;
     position: absolute;
     background: white;
