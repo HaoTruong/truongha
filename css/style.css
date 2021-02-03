@@ -6,11 +6,14 @@
 }
 
 body {
-    background: rgba(0, 0, 0, 0.815);
+    /* background: rgba(0, 0, 0, 0.815); */
+    background: url('../Assets/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding-bottom: 50px;
 }
 
 :root {
-    --Roboto: 'Roboto', cursive;
+    --Roboto: 'Roboto';
     --OpenSans: 'Open Sans', sans-serif;
     --Chealsea: 'Chealsea', cursive;
     --light-black: #2e2e2e;
@@ -19,12 +22,12 @@ body {
 
 /*Hide scrollbar*/
 #noScroll {
-    overflow:hidden;
+    overflow: hidden;
 }
 
 /* Header */
 header a {
-    font-family: var(--Chealsea);
+    font-family: var(--Roboto);
     font-size: 1em;
     color: whitesmoke;
     height: 3em;
@@ -45,6 +48,14 @@ header {
     z-index: 1;
 }
 
+header .navbar-brand {
+    font-size: 23px;
+}
+
+#dropDownHover {
+    cursor: pointer;
+}
+
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -54,6 +65,7 @@ header {
 
 .dropdown-content a:hover {
     background: #ddd;
+    cursor: pointer;
 }
 
 .dropdown:hover .dropdown-content {
@@ -74,37 +86,64 @@ header .navbar-brand {
 }
 
 
-/*Section 1*/
+/*About me*/
 
-.section-1 {
-    height: 50em;
-    padding: 20px 0;
-    background-image: url('../Assets/bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+#introduction, #coopExperience, #reflection {
+    font-family: var(--Roboto);
+    font-size: 20px;
 }
 
-.section-1 h1 {
-    padding-top: 9em;
-    color: white;
+.container-fluid .firstHeader {
+    margin-top: 3em;
 }
 
 
-/*First Year*/
-.firstYear {
-    padding-top: 5vmin;
-    background-image: url('../Assets/bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50em;
+.row .col-md-10 {
+    padding-top: 3em;
 }
 
-.firstYear .row .col-md-6 .pray {
+.row .col-md-10 .panel {
+    width: 80%;
+    top: 7vmin;
+    left: 0;
+    background: white;
+    text-align: left;
+    border-radius: 3px;
+    padding: 3em 2em 3em 2em;
+    box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-left: 2em;
+}
+
+.sticky-offset {
+    top: 10em;
+}
+
+.row .col-md-2 {
+    top: 3em;
+    margin-left: -6em;
+}
+
+
+
+/*Co-op Experience*/
+
+.coopExperience .row {
+    padding-top: 6em;
+}
+
+.row {
+    margin-top: 30px;
+}
+.coopExperience .row .col-md-3 .pray {
     border-radius: 0.2em;
+
+}
+.coopExperience .row .col-md-9 {
+    padding-top: 3em;
 }
 
-.firstYear .row .col-md-6 .panel {
-    position: absolute;
+.coopExperience .row .col-md-9 .panel {
     top: 7vmin;
     left: -15vmin;
     background: white;
@@ -115,24 +154,27 @@ header .navbar-brand {
     z-index: 1;
 }
 
-.firstyear .row .col-md-6 .panel .p {
-    font-size: 0.9em;
-    font-family: var(--OpenSans);
-    color: black;
+/*Involment*/
+
+.involvement .row .col-md-12 .panel {
+    top: 7vmin;
+    left: -15vmin;
+    background: white;
+    text-align: left;
+    border-radius: 3px;
+    padding: 3em 2em 3em 2em;
+    box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
-/*Second Year*/
-.secondYear {
-    padding-top: 5vmin;
-    padding-left: 5em;
-    background-image: url('../Assets/bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50em;
+/*Reflection*/
+
+.reflection .row{
+    margin-top: 5em;
 }
 
-.secondYear .row .col-md-12 .panel {
-    position: absolute;
+
+.reflection .row .col-md-12 .panel {
     top: 7vmin;
     left: -15vmin;
     background: white;
@@ -159,5 +201,4 @@ footer {
 
 footer p {
     width: 60%;
-    overflow: auto;
 }

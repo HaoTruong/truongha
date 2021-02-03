@@ -17,11 +17,11 @@
     <script src="js/main.js"></script>
 </head>
 
-<body id="noScroll">
+<body>
     <header>
         <div class="container-fluid p-0">
-            <!--Nav bar-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="#">Hao Truong</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,31 +34,33 @@
                             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="aboutMe.html">About me</a>
+                            <a class="nav-link" href="coopExperience.html">Co-op experiences</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Co-op experiences</a>
+                            <a class="nav-link" href="webPDF/viewer.html?file=UC Resume Template_HaoTruong.pdf" target="_blank">Resume</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Resume</a>
+                            <a class="nav-link" href="involvement.html">Involvement</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Involvement</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Reflection</a>
+                            <a class="nav-link" href="reflection.html">Reflection</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link">
+                            <a class="nav-link" id="dropDownHover">
                                 Contact
                             </a>
                             <div class="dropdown-content">
-                                <a class="dropdown-item" href="https://www.linkedin.com/in/haotruong26/">
+                                <a class="dropdown-item" href="https://www.linkedin.com/in/haotruong26/" target="_blank">
                                     <i class="fab fa-linkedin text-muted pl-3 pr-2 pt-1"></i>
                                     Linkedin
                                 </a>
-                                <a class="dropdown-item" href="aboutMe.html">First Year</a>
-                                <a class="dropdown-item" href="secondYear.html">Second Year</a>
+                                <a class="dropdown-item">
+                                    <i class="fas fa-phone text-muted pl-3 pr-2 pt-1"></i>
+                                    513-816-3688
+                                </a>
+                                <a class="dropdown-item" href="mailto:truongha@mail.uc.edu">
+                                    <i class="fas fa-envelope-square text-muted pl-3 pr-2 pt-1"></i>
+                                    Email</a>
                             </div>
                         </li>
                     </ul>
@@ -67,12 +69,36 @@
         </div>
     </header>
     <main>
-        <!--section 1-->
-        <section class="section-1 container-fluid p-0">
-            <div>
-                <h1 class="text-center">Welcome to My Portfolio</h1>
+        
+        <div class="container-fluid text-center">    
+            <h1 class="firstHeader">Hello there, I'm Hao Truong</h1>
+            <h2>Welcome to My E-portfolio</h2>
+        </div>
+        <div class="container-fluid">
+        <div class="row" id="introduction">
+            <div class="col-md-10 content">
+                <div class="panel text-left">
+                <h1>Introduction</h1>
+                    <p>Hi, my name is Hao Truong. I am junior at the University of Cincinnati working towards a Bachelor of Science in Computer Science. I am interested in software application, especially in back end development. 
+                    </p>  
+                    <p>I got accepted into University of Cincinnati as Information Technology major. But I prefer Computer Science and I want to be in co-op program at University of Cincinnati, so I can have more hands-on experience before graduating. So I spent my first semester in Exploratory Studies, then re-applied for Computer Science. I am loving it so far. 
+                    </p>  
+                    <p>While at UC, I was lucky be in a program called Darwin T. Turners. We shared college experience; I learned a lot about different cultures. I volunteered for Bearcat Coders to help Hughes high school students with their Python projects in my first year. In my second year, I was a mentor in the program to help a new student getting used to college experience. 
+                    </p>
+                <div>Technical Skills:</div>
+                <ul>
+                    <li>Programming Language: C#, C++, Javascript, Java</li>
+                    <li>Software: MATLAB, Excel VBA, Microsoft Office</li>
+                </ul>
+                <h1>Career Goals</h1>
+                    <p>After graduating, I would love to work as back end developer. Then I want to continue studying for master degree and hopefully get a job as data scientist in the far future.</p>
+                </div>
             </div>
-        </section>
+            <div class="col-md-2">
+                <img class= "sticky-top sticky-offset" src="Assets/firstYearImg.jpg">
+            </div>
+        </div>
+        </div>
     </main>
 
 
